@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>My Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<!-- Header -->
+    <div id="header">
+        <div class="container">
+            <nav class="gradient-border" id="box">
+                <a href="#" class="logo">MH.</a>
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#my-work">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class='bx bx-x' onclick="closemenu()"></i>
+                </ul>
+                <i class='bx bx-menu'onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hi, I'm a web developer</p>
+                <h1>Minh Hoang, from <span>HUS</span><br>Hanoi, Vietnam</h1>
+            </div>
+
+            <div class="header-btn">
+                <button type="submit" class="btn"> <a href="#my-work">My Lastest Work </a></button>
+                <button type="submit" class="btn"> <a href="#contact">Contact </a></button>
+            </div>
+        </div>
+    </div>
+<!-- End Header -->
+
+<!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/assets/images/about.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Just a little guy who knows nothing about the world</p>
+                
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>No Skills</span><br>Trying to be better</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>No Experience</span><br>Trying to be better</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-Current</span><br>Learning Mathematics and Science Computer at HUS, VNU</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- End about -->
+
+<!-- My Work -->
+    <div id="my-work">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/assets/images/work-1.png" alt="">
+                </div>
+
+                <div class="work">
+                    <img src="/assets/images/work-2.png" alt="">
+                </div>
+
+                <div class="work">
+                    <img src="/assets/images/work-3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- End my work -->
+
+<!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p> <i class='bx bx-envelope' ></i> contact@example.com</p>
+                    <p> <i class='bx bxs-phone-call'></i> 0123456789</p>
+                    <div class="social-icons">
+                        <a href=""><i class='bx bxl-meta'></i></a>
+                        <a href=""><i class='bx bxl-twitter' ></i></a>
+                        <a href=""><i class='bx bxl-instagram' ></i></a>
+                        <a href=""><i class='bx bxl-linkedin' ></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn"> Send </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- End Contact -->
+    <script src="main.js"></script>
+</body>
+</html>
